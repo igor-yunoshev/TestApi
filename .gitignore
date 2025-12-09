@@ -61,3 +61,6 @@ nunit-*.xml
 /.vs/TestApi/CopilotIndices/18.0.934.24903/CodeChunks.db
 /.vs/TestApi.slnx/v18/DocumentLayout.backup.json
 /TestApi.Api/TestApi.Api.csproj.user
+/.vs/TestApi.slnx/FileContentIndex/*
+/.vs/TestApi/CopilotIndices/*
+/.vs/TestApi.slnx/v18/DocumentLayout.json
