@@ -52,3 +52,12 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs/TestApi.slnx/v18/.suo
+/.vs/TestApi.slnx/DesignTimeBuild/.dtbcache.v2
+/.vs/TestApi.slnx/FileContentIndex/2d3e2bfa-aaec-42c8-bb90-a6fd9193a45d.vsidx
+/.vs/TestApi.slnx/FileContentIndex/e4d71e10-d95e-4d6a-b7bc-080a6f312227.vsidx
+/.vs/TestApi.slnx/FileContentIndex/eb54eb85-7d74-47ce-8986-406f4b3fda38.vsidx
+/.vs/TestApi/CopilotIndices/18.0.934.24903/SemanticSymbols.db
+/.vs/TestApi/CopilotIndices/18.0.934.24903/CodeChunks.db
+/.vs/TestApi.slnx/v18/DocumentLayout.backup.json
+/TestApi.Api/TestApi.Api.csproj.user
