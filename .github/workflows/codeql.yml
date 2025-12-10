@@ -16,10 +16,13 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:  
+  
   # schedule:
   #   - cron: '28 14 * * 1'
 
-jobs:
+jobs:  
+
   analyze:
     name: Analyze (${{ matrix.language }})
     # Runner size impacts CodeQL analysis time. To learn more, please see:
@@ -119,13 +122,22 @@ jobs:
     needs:
       - analyze
       - scan-pr
+    permissions:
+      contents: read
+
+    env:
+      # Reduce caching size
+      NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4  
     - name: Setup .NET
+      id: setupDotNet
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
+        cache: true
+    - run: echo '${{ steps.setupDotNet.outputs.dotnet-version }}'
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
